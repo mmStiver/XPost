@@ -4,6 +4,29 @@ Configuration is multi-layered, since you can specify defaults (like username an
 
 Posting to "Discuit" in strict mode will create one post to community Discuit, while in posting to "Discuit" in not strict search will match 9 communities (DiscuitDev, DiscuitMeta, etc). The number of posts is capped at 5, any additional posts queued after 5 will be dropped.
 
+### Build:
+
+As a .Net application, it is a quick build. Only major pre-requisite to run is having the dotnet runtime : [.NET 8.0.x](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) Runtime. Building the project requires the sdk to run the dotnet cli tool.
+
+Creating the application is as simple as pulling the code, and running the publish command:
+
+`dotnet publish -c Release -r [platform]`
+
+where -r is the target, (e.g. linux-x64, win-x64  osx-x64)
+
+##Linux
+
+dotnet publish -c Release -r linux-x64 -o /path/to/linux/output
+
+##Windows
+
+dotnet publish -c Release -r win-x64 -o /path/to/windows/output
+
+##macOS Target
+
+dotnet publish -c Release -r osx-x64 -o /path/to/macos/output
+
+
 ### How To Use
 Specify a settings file:
 
