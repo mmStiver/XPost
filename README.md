@@ -14,19 +14,6 @@ Creating the application is as simple as pulling the code, and running the publi
 
 where -r is the target, (e.g. linux-x64, win-x64  osx-x64)
 
-##Linux
-
-dotnet publish -c Release -r linux-x64 -o /path/to/linux/output
-
-##Windows
-
-dotnet publish -c Release -r win-x64 -o /path/to/windows/output
-
-##macOS Target
-
-dotnet publish -c Release -r osx-x64 -o /path/to/macos/output
-
-
 ### How To Use
 Specify a settings file:
 
